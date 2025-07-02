@@ -1,3 +1,4 @@
 mini_dp_venv/
 
 .env
+__pycache__/
