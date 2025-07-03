@@ -20,7 +20,7 @@ def create_app(test_config=None):
     #Sets up default configurations for secret key(CHANGE IN PROD) & database
     app.config.from_mapping(
         SECRET_KEY='dev',
-        DATABASE=os.path.join(app.instance_path, 'app.sqlite'),
+        DATABASE=os.path.join(app.instance_path, 'application.sqlite'),
     )
 
     if test_config is None:
@@ -40,3 +40,5 @@ def create_app(test_config=None):
     @app.route('/hello')
     def hello():
         return 'Hello, World!'
+    
+    return app
