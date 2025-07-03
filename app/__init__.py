@@ -45,9 +45,12 @@ def create_app(test_config=None):
     from . import db
     db.init_app(app)
 
-        #for use authentifaction
+    #for use authentifaction
     from . import auth
     app.register_blueprint(auth.bp)
 
+    from . import uploads
+    app.register_blueprint(uploads.bp)
+    app.add_url_rule('/', endpoint='index')
 
     return app
