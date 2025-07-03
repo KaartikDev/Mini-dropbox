@@ -5,7 +5,7 @@ from flask import (
 )
 from werkzeug.security import check_password_hash, generate_password_hash
 
-from flaskr.db import get_db
+from app.db import get_db
 
 
 #creates a blueprint(which is a many app focused on specifc things) named auth
