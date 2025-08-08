@@ -92,7 +92,7 @@ def logout():
     session.clear()
     return redirect(url_for('index'))
 
-#decorator to check of user is logged in for other vires, otherwise kicks user out to login
+#decorator to check of user is logged in for other views, otherwise kicks user out to login
 def login_required(view):
     @functools.wraps(view)
     def wrapped_view(**kwargs):
