@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
+import StatusIndicator from '../StatusIndicator';
 
 function Home(){
     return(
         <>
             <h1>Home</h1>
+            <StatusIndicator></StatusIndicator>
             <Link to="/about">About</Link>
             <br />
             <Link to="/login">Login</Link>

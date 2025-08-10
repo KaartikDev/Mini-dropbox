@@ -5,7 +5,9 @@ import Login from './pages/Login'
 import Upload from './pages/Upload'
 import Gallery from './pages/Gallery'
 
+
 import { HashRouter, Routes, Route } from 'react-router-dom'
+import { useAuth } from "react-oidc-context";
 
 function App() {
   return(
