@@ -1,9 +1,10 @@
+//Login.jsx
+
 import { useAuth } from "react-oidc-context";
 
 
-
 function Login(){
-      const auth = useAuth();
+  const auth = useAuth();
 
   const signOutRedirect = () => {
     const clientId = "7mrp01870fmr2n1esjkqhvmt84";

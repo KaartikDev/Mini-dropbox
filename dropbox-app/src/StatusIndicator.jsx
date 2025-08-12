@@ -1,3 +1,4 @@
+//StatusIndicator.jsx
 import { useAuth } from "react-oidc-context";
 
 function StatusIndicator() {

@@ -1,3 +1,4 @@
+//Gallery.jsx
 function Gallery(){
     return(
         <h1>Gallery</h1>
